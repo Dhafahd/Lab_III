@@ -3,9 +3,15 @@
 **Realize by : Chibani Fahd**\
 **Course : NLP**
 
-## Introduction
+## Introduction :
 The purpose of this lab is to get familiar with NLP language models using the Sklearn library. The lab is divided into two parts: the first part focuses on regression models (SVR, Naive Bayes, Linear Regression, Decision Tree Algorithms), and the second part concentrates on classification models (SVM, Naive Bayes, Logistic Regression, Ada Boosting). Through these exercises, you will gain hands-on experience with both types of models, enhancing your understanding of their applications and performance in natural language processing tasks.
 
-## Part 1: Language Modeling / Regression
+## Part 1: Language Modeling / Regression :
+For this part, we will use a dataset available at short_answer_grading dataset. The tasks involve establishing a preprocessing NLP pipeline which includes tokenization, stemming, lemmatization, removal of stop words, and discretization. Following this, we will encode the data vectors using techniques like Word2Vec (CBOW, Skip Gram), Bag of Words, and TF-IDF. The next step involves training various models including Support Vector Regression (SVR), Naive Bayes, Linear Regression, and Decision Tree algorithms. We will evaluate these models using standard metrics such as Mean Squared Error (MSE) and Root Mean Squared Error (RMSE), choose the best model based on these evaluations, and justify our choice. Finally, we will analyze and interpret the results obtained from the model evaluations. This process will help students develop a solid understanding of how to preprocess text data, encode it into numerical vectors, train various regression models, and evaluate their performance, providing a strong foundation for further exploration and application of NLP techniques in various domains.
+### Conclusion :
+In conclusion, Linear Regression is the preferred choice for predictive modeling on this dataset based on the Mean Squared Error (MSE) and Root Mean Squared Error (RMSE), it shows the lowest MSE and RMSE values. This implies that its predictions align most closely with the actual values.However,it's important to also consider other aspects such as model assumptions, computational efficiency, and interpretability when finalizing the model choice.
 
-## Part 2 : Language Modeling / Classification
+## Part 2 : Language Modeling / Classification :
+Embarking on sentiment analysis of Twitter conversations, we adopt a systematic approach. Firstly, we clean up the data by organizing it and removing unnecessary words. Then, we transform the text into numbers using various techniques like Bag of Words and Word2Vec. Next, we train different models such as SVM and Naive Bayes to understand the sentiments conveyed. By comparing their performance using metrics like accuracy and F1 score, we identify the best model. Lastly, we dig into what these models tell us about the sentiments expressed on Twitter, aiming to understand the conversations happening in this digital space better.
+### Conclusion :
+In conclusion, our evaluation of different classification algorithms for sentiment analysis on Twitter data highlights that Logistic Regression and SVM emerge as top performers, showcasing superior accuracy and overall classification metrics compared to Naive Bayes and AdaBoost. Despite their lower accuracy scores, AdaBoost and Naive Bayes offer valuable insights, particularly in accurately classifying majority classes. Therefore, when selecting the optimal model for deployment, it's essential to consider task-specific requirements and strike a balance between precision, recall, and accuracy. By doing so, we can harness the strengths of each algorithm to effectively analyze sentiments in Twitter conversations.
